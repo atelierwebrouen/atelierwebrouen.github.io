@@ -2,22 +2,129 @@
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="fr"> <!--<![endif]-->
 
 <head>
 
 	<!-- Basic Page Needs
-  ================================================== -->
+	================================================== -->
 	<meta charset="utf-8">
-    <title>Les ateliers web de Rouen</title>
+	<title>Les ateliers web de Rouen</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 
 	<!-- Mobile Specific Metas
-  ================================================== -->
+	================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+	<style>
+		
+		/* Layout */
+
+		
+
+		/* Typography */
+
+		body {
+			line-height: 1.4375em;
+			max-width: 760px;
+			margin: 0 auto;
+		}
+		h1 {
+			font-size: 1.75em;
+			line-height: 1.642857142em;
+			margin-top: 1.64285714em;
+			margin-bottom: 0.82142857em;
+		}
+		h2 {
+			font-size: 1.4375em;
+			line-height: 1em;
+			margin-top: 2em;
+			margin-bottom: 1em;
+		}
+		.block-workshop h1,
+		h3 {
+			font-size: 1.1875em;
+			line-height: 1.210526316em;
+			margin-top: 1.21052632em;
+			margin-bottom: 1.21052632em;
+		}
+		h4 {
+			font-size: 1em;
+			line-height: 1.4375em;
+			margin-top: 1.4375em;
+			margin-bottom: 1.4375em;
+		}
+
+		p, ul, ol, pre, table, blockquote {
+			margin-top: 1.4375em;
+			margin-bottom: 1.4375em;
+		}
+
+		/* Sanitation */
+
+		hr {
+			border: 1px solid;
+			margin: -1px 0;
+		}
+		ul ul, ol ol, ul ol, ol ul {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		b, strong, em, small, code {
+			line-height: 1;
+		}
+
+		@media screen and (max-width: 25.000em) {
+			body {
+				font-size: 90%;
+			}
+		}
+
+		/* Media query :: responsive code */
+
+		@media screen and (max-width: 37.750em) {
+
+		}
+
+		@media screen and (max-width: 43.750em) {
+
+		}
+
+		@media screen and (max-width: 64.375em) {
+			body {
+				font-size: 100%;
+			}
+		}
+
+		@media screen and (min-width:64.375em) {
+			body {
+				font-size: 112.5%;
+			}
+		}
+
+		@media screen and (max-width: 75.000em) {
+
+		}
+
+		@media screen and (max-width: 106.875em) {
+
+		}
+
+		/* Media queries */
+		/*$mobile: 	 								25.000em;  	/*400px */
+		/*$smart: 									37.750em;  	/*600px */ 
+		/*$book: 									43.750em;  	/*700px */ 
+		/*$tablet: 									64.375em;  	/*1030px*/
+		/*$desk:  									75.000em;	/*1200px*/
+		/*$sofa: 		 							106.875em; 	/*1710px*/
+
+	</style>
+
 </head>
+
+
+
 
 <body>
 	
@@ -25,26 +132,25 @@
 		<h1>Les ateliers web de Rouen</h1> 
 	</header>
 	
-
 	<p><strong>Participez aux ateliers collaboratifs autour d'une bière. Venez parler beaucoup de web un peu de technique.</strong></p>
 
-	<section>
+	<section class="block-workshop">
 		
 		<h2>Les prochains rendez-vous à Guidoline - rue Molière</h2>
 
-		<article itemscope itemtype=http://schema.org/Event><h1 itemprop="name">Web design, conception Responsive</h1> - <meta itemprop="StartDate" content="2014-05-13T18:30">Le mardi 13 mai 2014 - 18h30</meta></article>
-		<article itemscope itemtype=http://schema.org/Event><h1 itemprop="name">Sujet non déterminé encore</h1> - <meta itemprop="StartDate" content="2014-06-10T18:30">Le mardi 10 juin 2014 - 18h30</meta></article>
+		<article itemscope itemtype=http://schema.org/Event><h1 itemprop="name">Web design, conception Responsive</h1> <meta itemprop="StartDate" content="2014-05-13T18:30">Le mardi 13 mai 2014 - 18h30</meta></article>
+		<article itemscope itemtype=http://schema.org/Event><h1 itemprop="name">Sujet non déterminé encore</h1> <meta itemprop="StartDate" content="2014-06-10T18:30">Le mardi 10 juin 2014 - 18h30</meta></article>
 
 	</section>
 	
-	<section>
+	<section class="block-workshop">
 		
 		<h2>Les précédents rendez-vous à Guidoline - rue Molière</h2>
 
-		<article itemscope itemtype=http://schema.org/Event><h1 itemprop="name">Conception collaborative</h1> - <meta itemprop="StartDate" content="2013-09-24T18:30">Le mardi 24 septembre 2013</meta></article>
-		<article itemscope itemtype=http://schema.org/Event><h1 itemprop="name">Définition d'indentité collaborative</h1> - <meta itemprop="StartDate" content="2013-10-19T18:30">Le mardi 19 novembre 2014</meta></article>
-		<article itemscope itemtype=http://schema.org/Event><h1 itemprop="name">Github pages et prose.io</h1> - <meta itemprop="StartDate" content="2014-03-26T18:30">Le mercredi 26 mars 2014</meta></article>
-		<article itemscope itemtype=http://schema.org/Event><h1 itemprop="name">HTML5, construire une structure sémantique</h1> - <meta itemprop="StartDate" content="2014-04-15T18:30">Le mardi 15 avril 2014</meta></article>
+		<article itemscope itemtype=http://schema.org/Event><h1 itemprop="name">Conception collaborative</h1> <meta itemprop="StartDate" content="2013-09-24T18:30">Le mardi 24 septembre 2013</meta></article>
+		<article itemscope itemtype=http://schema.org/Event><h1 itemprop="name">Définition d'indentité collaborative</h1> <meta itemprop="StartDate" content="2013-10-19T18:30">Le mardi 19 novembre 2014</meta></article>
+		<article itemscope itemtype=http://schema.org/Event><h1 itemprop="name">Github pages et prose.io</h1> <meta itemprop="StartDate" content="2014-03-26T18:30">Le mercredi 26 mars 2014</meta></article>
+		<article itemscope itemtype=http://schema.org/Event><h1 itemprop="name">HTML5, construire une structure sémantique</h1> <meta itemprop="StartDate" content="2014-04-15T18:30">Le mardi 15 avril 2014</meta></article>
 
 	</section>
 
@@ -54,19 +160,20 @@
 
 		<blockquote>
 			<p>Les ateliers web ont été pour moi une vraie révélation, j'y ai découvert une bière bio et pas chère vraiment savoureuse.
-			<br><strong>John - Geek</strong></p>
-		</blockquote>
+				<br><strong>John - Geek</strong></p>
+			</blockquote>
 
-		<blockquote>
-			<p>Ce qui est cool aux ateliers web de Rouen c'est que l'organisation est super carrée. On passe une chouette soirée à parler web tout en apprenant le fonctionnement de certaines technos.
-			<br>Vivre le logiciel libre.
-			<br><strong>Yvon - Maire</strong></p>
-		</blockquote>
+			<blockquote>
+				<p>Ce qui est cool aux ateliers web de Rouen c'est que l'organisation est super carrée. On passe une chouette soirée à parler web tout en apprenant le fonctionnement de certaines technos.
+					<br>Vivre le logiciel libre.
+					<br><strong>Yvon - Maire</strong></p>
+				</blockquote>
 
-	</aside>
-	
-	<footer>
-		2014
-	</footer>
-</body>
-</html>
+			</aside>
+
+			<footer>
+				2014
+			</footer>
+
+		</body>
+		</html>
