@@ -16,8 +16,7 @@
 	<!-- Mobile Specific Metas
 	================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-    <link href="http://fonts.googleapis.com/css?family=Lekton:400,700,400italic" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Lekton:400,700,400italic" rel="stylesheet" type="text/css">
 
 	<style>
 
@@ -25,6 +24,7 @@
 			line-height: 1.4375em;
 			margin: 0 auto;
 			font-size: 90%;
+			font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 		}
 		
 		/* Layout */
@@ -40,7 +40,7 @@
 		}
 
 		main {
-		
+
 		}
 
 		aside {
@@ -51,47 +51,53 @@
 
 		}
 
-		body {
-			line-height: 1.4375em;
-			max-width: 760px;
-			margin: 0 auto;
-		
-
 		/* Typography */
 
 		h1 {
-            font-family: Lekton, sans-serif;
-            font-size: 3em;
-            font-weight: 700;
-            text-transform: uppercase;
+			font-family: Lekton, sans-serif;
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 4.625em;
+		  line-height: 1.243243244em;
+		  margin-top: 0.62162162em;
+		  margin-bottom: 0.31081081em;
 		}
 		h2 {
-            font-family: Lekton, sans-serif;
-            font-size: 2em;
-            font-weight: 400;
+			font-family: Lekton, sans-serif;
+			font-weight: 400;
+			font-size: 2.75em;
+		  line-height: 1.045454546em;
+		  margin-top: 1.04545455em;
+		  margin-bottom: 0.52272727em;
 		}
-		.block-workshop h1,
+		h2:first-child {
+			margin-top: 0;
+		}
+		.workshop h1,
 		h3 {
+			text-transform: none;
+			font-size: 1.6875em;
+		  line-height: 1.703703704em;
+		  margin-top: 0.85185185em;
+		  margin-bottom: 0.85185185em;
+		  margin-bottom: 0;
 		}
 		h4 {
+			font-size: 1em;
+		  line-height: 1.4375em;
+		  margin-top: 1.4375em;
+		  margin-bottom: 1.4375em;
+		}
+		
+		.workshop h1 {
+			margin-bottom: 0;
 		}
 
 		p, ul, ol, pre, table, blockquote {
+  		margin-top: 0;
+  		margin-bottom: 1.4375em;
 		}
 
-		/* Sanitation */
-
-		hr {
-			border: 1px solid;
-			margin: -1px 0;
-		}
-		ul ul, ol ol, ul ol, ol ul {
-			margin-top: 0;
-			margin-bottom: 0;
-		}
-		b, strong, em, small, code {
-			line-height: 1;
-		}
 
 		/* Media query :: responsive code */
 		
@@ -120,7 +126,8 @@
 			}
 
 			main {
-				width: 49rem;
+				width: 45rem;
+				margin-right: 4rem;
 			}
 
 			aside {
@@ -129,7 +136,20 @@
 		}
 
 		/*1710px*/
-		@media screen and (min-width: 106.875em) {}	
+		@media screen and (min-width: 106.875em) {
+			body {
+				font-size: 130%;
+				max-width: 106.875rem;
+			}
+			main {
+				width: 56,875rem;
+				margin-right: 4rem;
+			}
+
+			aside {
+				width: 50rem;
+			}
+		}	
 
 	</style>
 
@@ -141,56 +161,88 @@
 <body>
 	
 	<header>
-		<h1>Les ateliers web de Rouen</h1> 
+		<h1>Les ateliers web @ Rouen</h1> 
 	</header>
 	
 	<main>
 
 		<p><strong>Participez aux ateliers collaboratifs autour d'une bière. Venez parler beaucoup de web un peu de technique.</strong></p>
 
-		<section class="block-workshop">
+		<section class="workshop">
 			
-			<h2>Les prochains rendez-vous à Guidoline - rue Molière</h2>
+			<h2>Les prochains ateliers</h2>
 
+			<article itemscope itemtype=http://schema.org/Event>
+				<h1 itemprop="name">Conception Responsive - pictogrammes svg</h1>
+				<p class="workshop__date" itemprop="StartDate" content="2014-06-11T18:30">Le mercredi 11 juin 2014 - 18h30</p>
+			</article>
 
-			<article itemscope itemtype=http://schema.org/Event><h1 itemprop="name">Web design, conception Responsive</h1> <p itemprop="StartDate" content="2014-05-13T18:30">Le mardi 13 mai 2014 - 18h30</p></article>
-			<article itemscope itemtype=http://schema.org/Event><h1 itemprop="name">Sujet non déterminé encore</h1> <p itemprop="StartDate" content="2014-06-10T18:30">Le mardi 10 juin 2014 - 18h30</p></article>
+			<article itemscope itemtype=http://schema.org/Event>
+				<h1 itemprop="name">Les préprocesseurs CSS</h1>
+				<p itemprop="StartDate" content="2014-09-10T18:30">Septembre 2014</p>
+			</article>
+
+			<article itemscope itemtype=http://schema.org/Event>
+				<h1 itemprop="name">Les référentiels qualité web</h1>
+				<p itemprop="StartDate" content="2014-09-10T18:30">Octobre 2014</p>
+			</article>
+
+			
 
 		</section>
 		
-		<section class="block-workshop">
+		<section class="workshop">
 			
-			<h2>Les précédents rendez-vous à Guidoline - rue Molière</h2>
+			<h2>Les précédents ateliers</h2>
 
-			<article itemscope itemtype=http://schema.org/Event><h1 itemprop="name">Conception collaborative</h1> <p itemprop="StartDate" content="2013-09-24T18:30">Le mardi 24 septembre 2013</p></article>
-			<article itemscope itemtype=http://schema.org/Event><h1 itemprop="name">Définition d'indentité collaborative</h1> <p itemprop="StartDate" content="2013-10-19T18:30">Le mardi 19 novembre 2014</p></article>
-			<article itemscope itemtype=http://schema.org/Event><h1 itemprop="name">Github pages et prose.io</h1> <p itemprop="StartDate" content="2014-03-26T18:30">Le mercredi 26 mars 2014</p></article>
-			<article itemscope itemtype=http://schema.org/Event><h1 itemprop="name">HTML5, construire une structure sémantique</h1> <p itemprop="StartDate" content="2014-04-15T18:30">Le mardi 15 avril 2014</p></article>
+			<article itemscope itemtype=http://schema.org/Event>
+				<h1 itemprop="name">Conception collaborative</h1>
+				<p itemprop="StartDate" content="2013-09-24T18:30">Le mardi 24 septembre 2013</p>
+			</article>
+			<article itemscope itemtype=http://schema.org/Event>
+				<h1 itemprop="name">Définition d'identité collaborative</h1>
+				<p itemprop="StartDate" content="2013-10-19T18:30">Le mardi 19 novembre 2014</p>
+			</article>
+			<article itemscope itemtype=http://schema.org/Event>
+				<h1 itemprop="name">Github pages et prose.io</h1>
+				<p itemprop="StartDate" content="2014-03-26T18:30">Le mercredi 26 mars 2014</p>
+			</article>
+			<article itemscope itemtype=http://schema.org/Event>
+				<h1 itemprop="name">HTML5, structure sémantique et SEO</h1>
+				<p itemprop="StartDate" content="2014-04-15T18:30">Le mardi 15 avril 2014</p>
+			</article>
+			<article itemscope itemtype=http://schema.org/Event>
+				<h1 itemprop="name">Conception Responsive - typographie et gabarit</h1>
+				<p itemprop="StartDate" content="2014-05-13T18:30">Le mardi 13 mai 2014 - 18h30</p>
+			</article>
 
 		</section>
-	
+
 	</main>
 
 	<aside>
+
+		<h2>Lieu</h2>
+		<p>Guidoline - rue Molière à Rouen</p>
 		
 		<h2>Les retours</h2>
 
 		<blockquote>
 			<p>Les ateliers web ont été pour moi une vraie révélation, j'y ai découvert une bière bio et pas chère vraiment savoureuse.
-				<br><strong>John - Geek</strong></p>
-			</blockquote>
+				<br /><strong>John - Geek</strong></p>
+		</blockquote>
 
-			<blockquote>
+		<blockquote>
 				<p>Ce qui est cool aux ateliers web de Rouen c'est que l'organisation est super carrée. On passe une chouette soirée à parler web tout en apprenant le fonctionnement de certaines technos.
-					<br>Vivre le logiciel libre.
-					<br><strong>Yvon - Maire</strong></p>
-				</blockquote>
+					<br />Vivre le logiciel libre.
+					<br /><strong>Yvon - Maire</strong></p>
+		</blockquote>
 
-			</aside>
+	</aside>
 
-			<footer>
-				2014
-			</footer>
+	<footer>
+		2014
+	</footer>
 
-		</body>
-		</html>
+</body>
+</html>
